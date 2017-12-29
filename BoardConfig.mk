@@ -135,6 +135,9 @@ TARGET_KERNEL_CLANG_VERSION := proton
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
