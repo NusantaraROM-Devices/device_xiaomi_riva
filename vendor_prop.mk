@@ -140,7 +140,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Power Saver
 PRODUCT_PROPERTY_OVERRIDES += \
     power.saving.mode=1 \
-    pm.sleep_mode=1
+    pm.sleep_mode=3
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -186,23 +186,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=500
+    wifi.supplicant_scan_interval=800
 
 # Fast App Launch
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
-
-# Memory management tweaks
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.fha_enable=true \
-    ro.sys.fw.bg_apps_limit=32 \
-    ro.config.dha_cached_max=16 \
-    ro.config.dha_empty_max=42 \
-    ro.config.dha_empty_init=32 \
-    ro.config.dha_lmk_scale=0.545 \
-    ro.config.dha_th_rate=2.3 \
-    ro.config.sdha_apps_bg_max=64 \
-    ro.config.sdha_apps_bg_min=8
 
 # Dirac algo tsx 9/12
 PRODUCT_PROPERTY_OVERRIDES += \
