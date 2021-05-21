@@ -1,9 +1,9 @@
 [
   {
     "remote":      "github",
-    "repository":  "anggialansori404/kernel_xiaomi_riva",
+    "repository":  "HIKARI-CI-Build-Project/platform_kernel_xiaomi_msm8917.git",
     "target_path": "kernel/xiaomi/msm8917",
-    "branch":      "11",
+    "branch":      "r",
     "clone-depth": "1"
   },
  {
