@@ -1,0 +1,16 @@
+allow untrusted_app persist_camera_prop:file { read };
+allow untrusted_app persist_camera_prop:file { open };
+allow untrusted_app persist_camera_prop:file { getattr };
+allow untrusted_app self:fifo_file { ioctl };
+allow untrusted_app rootfs:dir { read };
+allow untrusted_app init_exec:lnk_file { getattr };
+allow untrusted_app mnt_vendor_file:lnk_file { getattr };
+allow untrusted_app rootfs:file { getattr };
+allow untrusted_app kernel:dir { getattr };
+allow untrusted_app sysfs:dir { read };
+allow untrusted_app sysfs_power:file { getattr };
+allow untrusted_app sysfs_android_usb:dir { search };
+allow untrusted_app sysfs_devfreq:dir { search };
+allow untrusted_app sysfs_net:dir { search };
+allow untrusted_app sysfs_batteryinfo:dir { search };
+allow untrusted_app sysfs_rtc:dir { search };
