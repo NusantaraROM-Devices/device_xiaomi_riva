@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_riva.mk
+    $(LOCAL_DIR)/nad_riva.mk
 
 COMMON_LUNCH_CHOICES := \
-     lineage_riva-user \
-     lineage_riva-userdebug
+     nad_riva-user \
+     nad_riva-userdebug
