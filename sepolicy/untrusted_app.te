@@ -1,0 +1,15 @@
+allow untrusted_app mnt_vendor_file:lnk_file { read getattr };
+allow untrusted_app postinstall_mnt_dir:dir { search };
+allow untrusted_app proc_version:file { getattr };
+allow untrusted_app proc_vmallocinfo:file { getattr };
+allow untrusted_app proc_vmstat:file { getattr };
+allow untrusted_app proc_zoneinfo:file { getattr };
+allow untrusted_app property_data_file:dir { getattr };
+allow untrusted_app rootfs:file { getattr };
+allow untrusted_app system_data_file:dir { read };
+allow untrusted_app tombstone_data_file:dir { search getattr };
+allow untrusted_app untrusted_app:fifo_file { ioctl };
+allow untrusted_app wifi_vendor_data_file:dir { getattr };
+
+dontaudit untrusted_app mnt_vendor_file:dir { search };
+dontaudit untrusted_app trace_data_file:dir { getattr };
